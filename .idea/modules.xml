@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../NATO-alphabet/.idea/NATO-alphabet.iml" filepath="$PROJECT_DIR$/../NATO-alphabet/.idea/NATO-alphabet.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/flash-cards.iml" filepath="$PROJECT_DIR$/.idea/flash-cards.iml" />
     </modules>
   </component>

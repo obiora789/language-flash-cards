@@ -10,15 +10,13 @@ canvas_height = 526
 BACKGROUND_COLOR = "#B1DDC6"
 PADDING = 40
 FONT_NAME = "Arial"
-english = ""
 english_word = ""
-front_language = ""
 language_word = ""
 count_timer = ""
-language_index = 0
-language_list = []
-english_list = []
 unique_ids = {"lang_id": 0, "word_id": 0, }
+language_index = 0
+front_language = ""
+english = "English"
 
 
 def switch_display(count):
@@ -37,24 +35,35 @@ def switch_display(count):
         wrong_button.config(command=reset)
 
 
+def manipulate_list():
+    global language_index, language_word, english_word, front_language
+    choice_object = random.choice(language_dictionary)
+    front_language = [key for key, _ in choice_object.items() if _ == _]
+    front_language = front_language[0]
+    language_index = language_dictionary.index(choice_object)
+    language_word = choice_object[front_language]
+    english_word = choice_object[english]
+    return language_index, front_language, language_word, english_word
+
+
 def front_image(fronted_image):
     front_card.create_image(canvas_width/2, canvas_height/2, image=fronted_image)
     unique_ids["lang_id"] = front_card.create_text(canvas_width/2, canvas_height/3.5, fill="black",
-                                                   text=front_language, font=(FONT_NAME, 26, "italic"))
+                                                   text=front_language, font=(FONT_NAME, 35, "italic"))
     unique_ids["word_id"] = front_card.create_text(canvas_width/2, canvas_height/2, fill="black",
-                                                   text=language_word, font=(FONT_NAME, 40, "bold"))
+                                                   text=language_word, font=(FONT_NAME, 50, "bold"))
 
 
 def back_image(backed_image):
     back_card.create_image(canvas_width/2, canvas_height/2, image=backed_image)
     unique_ids["lang_id"] = back_card.create_text(canvas_width/2, canvas_height/3.5, text=english,
-                                                  font=(FONT_NAME, 26, "italic"))
+                                                  font=(FONT_NAME, 35, "italic"))
     unique_ids["word_id"] = back_card.create_text(canvas_width/2, canvas_height/2, text=english_word,
-                                                  font=(FONT_NAME, 40, "bold"))
+                                                  font=(FONT_NAME, 50, "bold"))
 
 
 def reset():
-    manipulate_lists()
+    manipulate_list()
     front_card.delete(unique_ids["lang_id"], unique_ids["word_id"])
     back_card.delete(unique_ids["lang_id"], unique_ids["word_id"])
     frontier_image = PhotoImage(file="./images/card_front.png")
@@ -65,39 +74,22 @@ def reset():
 
 
 def delete_items():
+    del language_dictionary[language_index]
     reset()
-    del language_list[language_index]
-    del english_list[language_index]
-
-
-def chosen_language(header, language_data):
-    global front_language, english, language_list, english_list
-    language_list = language_data[header].tolist()
-    front_language = language_data[header].name
-    english_list = language_data.English.tolist()
-    english = language_data.English.name
-    return language_list, english_list
-
-
-def manipulate_lists():
-    global language_word, english_word, language_index
-    language_index = language_list.index(random.choice(language_list))
-    language_word = language_list[language_index]
-    english_word = english_list[language_index]
-    return language_index
 
 
 result = messagebox.askyesno(title="Choose Language", message="For French select 'Yes',"
                                                               " for Spanish, select 'No'.")
 if result:
-    chosen_language("French", french_data)
+    language_dictionary = french_data.to_dict(orient="records")
 else:
-    chosen_language("Spanish", spanish_data)
+    language_dictionary = spanish_data.to_dict(orient="records")
 
 window = Tk()
 window.title("Language Cards")
 window.config(padx=PADDING, pady=PADDING, background=BACKGROUND_COLOR, highlightthickness=0)
-manipulate_lists()
+
+manipulate_list()
 
 front_card = Canvas(width=canvas_width, height=canvas_height, highlightthickness=0, bg=BACKGROUND_COLOR)
 front_img = PhotoImage(file="./images/card_front.png")

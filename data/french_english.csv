@@ -458,10 +458,10 @@ demander,ask
 meilleur,better
 font,make
 derrière,behind
-c,vs
+fille,daughter
 dollars,dollars
 presque,almost
-dr,DR
+garçon,boy
 tellement,so much
 tomber,to fall
 journée,daytime
@@ -527,14 +527,14 @@ parfois,sometimes
 téléphone,telephone
 retour,return
 ira,will go
-e,e
+présente,this
 pauvre,poor
 verre,glass
 général,general
 new,new
 six,six
 pensé,think
-l,I
+coups,shots
 impossible,impossible
 fête,Party
 adore,adore
@@ -557,7 +557,7 @@ mauvais,Wrong
 chéri,Dear
 oublié,forgot
 bras,arms
-i,I
+époque,epoch
 gentil,kindly
 faute,mistake
 équipe,crew
@@ -602,19 +602,19 @@ bois,wood
 mets,put
 propre,own
 soyez,be
-jack,jack
+étrange,strange
 essayer,try
 faisait,did
 tôt,early
 surtout,above all
 arme,armed
-t,t
+nord,north
 rêve,dream
 perdre,to lose
 avis,notice
 semble,seems
 pire,worse 
-simple,simple
+avenir,future
 penses,thinking
 parles,speak
 paix,peace
@@ -624,7 +624,7 @@ voyons,let's see
 difficile,hard
 retard,delay
 allait,was going to
-d,d
+envoyer,send
 sujet,topic
 appris,learned
 ensuite,afterwards
@@ -640,7 +640,7 @@ serais,would be
 sale,dirty
 étiez,have been
 sûrement,surely
-an,year
+annee,year
 ordre,order
 souvent,often
 essayé,tried
@@ -655,7 +655,7 @@ photo,Photo
 rue,street
 tirer,pull
 comprendre,to understand
-face,face
+écouter,listen
 semaines,weeks
 marché,market
 questions,Questions
@@ -696,8 +696,8 @@ acheter,to buy
 continue,keep on going
 sort,spell
 faim,hunger
-long,long
-j,J
+etre,be
+vendre,sell
 voyage,travel
 message,message
 sorte,sort
@@ -714,7 +714,7 @@ sûre,safe
 problèmes,problems
 armes,weapons
 trucs,stuff
-camp,camp
+partez,go away
 allais,alla
 occupe,to keep busy
 devait,had to
@@ -749,7 +749,7 @@ seconde,second
 pensez,think
 allô,hi
 ailleurs,somewhere else
-agent,agent
+danse,dance
 froid,cold
 seras,will be
 pied,foot
@@ -757,7 +757,7 @@ jolie,pretty one
 revenir,come back
 scène,stage
 pieds,feet
-n,not
+merci, Thank you
 devons,owe
 groupe,band
 carte,map 
@@ -788,40 +788,40 @@ connaît,know
 debout,upright
 colonel,colonel
 cheval,horse
-écoutez,Listen
+lune,moon
 george,George
-joe,joe
+peau,skin
 vieille,old
 entrez,Come in
 intérieur,interior
 coin,corner
-auras,auras
+nez,nose
 gagné,won
 fric,money
 loi,law
 absolument,absolutely
 dame,lady
-cool,cool
+ouvrir,open
 magnifique,gorgeous
 dos,back
 occuper,to occupy
 présent,here
 retrouver,to regain
 réussi,successful
-frank,Frank
+pleine,pregnant
 rencontrer,to encounter
 aviez,had
 meilleure,best
 âme,soul
 prêts,loans
 doucement,gently
-table,table
+mille,thousand
 lettre,letter
 rappelle,remember
 sam,sat
 fut,was
 risque,risk
-ordres,orders
+banque,bank
 appel,call
 commencer,begin
 terminé,ended
@@ -829,19 +829,19 @@ agit,act
 blanc,White
 sœur,sister
 pareil,the same
-charlie,charlie
+voler,steal
 chaud,hot
 finir,finish
 touche,touches 
 avance,advance
-ignore,ignore
+paraît,seems
 meurtre,murder
 tranquille,calm
 anniversaire,anniversary
 déjeuner,lunch
 disais,said
 bord,edge
-tom,Tom
+servir,serve
 jeunes,youth
 accident,accident
 parlez,speak
@@ -880,14 +880,14 @@ moitié,half
 surprise,surprise
 avocat,lawyer
 montre,show
-b,B
-su,su
+tient,holds
+flic,cop
 porter,carry
 télé,TV
 vivant,living
 jure,sworn
 disent,say
-mr,MR
+salaud,bastard
 serez,will be
 devriez,should
 devenu,became
@@ -910,17 +910,17 @@ contrôle,control
 prête,ready
 anglais,English
 sorti,got out
-k,k
+juge,judge
 bons,good
 disparu,faded away
 tenir,hold
 simplement,merely
 quitter,leave
 envoie,send
-paul,Paul
+tiré,drawn
 aimer,to like
 voie,way
-paris,Paris
+cour,courtyard
 classe,class
 huit,eight
 offre,offer
@@ -929,7 +929,7 @@ dangereux,dangerous
 attaque,offensive
 impression,impression
 folle,crazy woman
-michael,Michael
+bruit,noise
 mange,eat
 bravo,well done
 arrière,back
@@ -949,21 +949,21 @@ change,exchange
 arrêté,stopped
 enfer,hell 
 écrire,to write
-livres,books
+liberté,freedom
 habitude,habit
 réponse,answer
-david,david
-lieutenant,lieutenant
+bière,beer
+reine,queen
 savait,knew
-radio,radio
+viennent,come
 tenez,hold
 bande,bandaged
-bob,bob
+seuls,only
 rend,renders
 compagnie,company
 connu,known
 secours,rescue
-danse,dance
+dingue,crazy
 met,put
 vol,flight
 vit,lives
@@ -987,9 +987,9 @@ sortie,exit
 devais,had to
 combat,fight
 bouche,stuffy
-certain,certain
-visite,visit
-existe,exist
+vent,wind
+croit,believes
+payé,paid
 bête,stupid
 retourne,return
 approche,approach
@@ -997,5 +997,5 @@ pourtant,yet
 plusieurs,various
 rire,laugh
 but,aim
-sergent,sergeant
+travers,through
 public,audience
