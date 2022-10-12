@@ -21,7 +21,7 @@ english = "English"
 
 def switch_display(count):
     global count_timer
-    if count > -1:
+    if count > 0:
         right_button.config(command="")
         wrong_button.config(command="")
         count_timer = window.after(1000, switch_display, count - 1)
@@ -70,7 +70,7 @@ def reset():
     backer_image = PhotoImage(file="./images/card_back.png")
     front_image(frontier_image)
     back_image(backer_image)
-    switch_display(5)
+    switch_display(3)
 
 
 def delete_items():
@@ -108,6 +108,6 @@ right_button.grid(row=1, column=1)
 wrong_image = PhotoImage(file="./images/wrong.png")
 wrong_button = Button(image=wrong_image, highlightthickness=0, border=0)
 wrong_button.grid(row=1, column=0)
-switch_display(5)
+switch_display(3)
 
 window.mainloop()
