@@ -61,7 +61,7 @@ def manipulate_list():
     language_word = choice_object[front_language]
     english_word = choice_object[english]
     write_data = pandas.DataFrame(language_dictionary)
-    write_data.to_csv(f"./data/{front_language.lower()}_words_to_learn.csv")
+    write_data.to_csv(f"./data/{front_language.lower()}_words_to_learn.csv", index=False)
     return language_index, front_language, language_word, english_word
 
 
