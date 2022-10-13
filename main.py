@@ -26,6 +26,7 @@ flip_to_english = False
 
 
 def switch_to_english():
+    """flips the card to display the english word. It also enables the buttons."""
     global flip_to_english
     flip_to_english = True
     card.itemconfig(front_id, image=back_img)
@@ -38,10 +39,10 @@ def switch_to_english():
 
 
 def reset():
+    """flips the card to display the language word (Spanish or French). It also disables the buttons."""
     global flip_to_english
     manipulate_list()
     flip_to_english = False
-
     card.itemconfig(front_id, image=front_img)
     card.itemconfig(lang_id, text=front_language, fill=LANGUAGE_COLOR)
     card.itemconfig(word_id, text=language_word, fill=LANGUAGE_COLOR)
@@ -53,6 +54,7 @@ def reset():
 
 
 def manipulate_list():
+    """gets the words from the data and updates the words_to_learn csv file"""
     global language_index, language_word, english_word, front_language
     choice_object = random.choice(language_dictionary)
     front_language = [key for key, _ in choice_object.items() if key == "French" or key == "Spanish"]
@@ -66,6 +68,7 @@ def manipulate_list():
 
 
 def delete_items():
+    """deletes known words from the list"""
     del language_dictionary[language_index]
     reset()
 
